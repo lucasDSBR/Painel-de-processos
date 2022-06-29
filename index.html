@@ -1,0 +1,374 @@
+<!--
+Editado em: 25/05/2021
+Desenvolvedor: Lucas silva, lucasmaciel6690@gmail.com
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Painel de Processos</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style type="text/css">
+	html, body {
+		font-family: Arial;
+		font-size: 1.00rem;
+		color: #666;
+		background-color: 	#DCDCDC;
+		margin: 0;
+		padding: 0;
+	}
+	.ocultar {
+		margin: 0px;
+		cursor:pointer;
+		font-weight:bold;
+		font-size:12px; /* edite tamanho da fonte */
+		color:#000;
+		padding: 10px;
+		word-wrap: break-word;
+		/*background-color: #D3D3D3;*/
+		border-radius: 10px;
+		margin: 10px;
+
+
+
+	}
+	.mostrar {
+		margin: 0px;
+		padding: 5px;
+		width: 90%;
+		border-radius: 10px;
+		word-wrap: break-word;	
+
+		
+	}
+	
+	.container {
+		width: 2%;
+		min-width: 30%;
+	}
+	.conteudo {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		max-width: 70%;
+		min-width: 550px;
+		flex-wrap: wrap;
+	}
+	.sub_tit {
+		position: relative;
+		background-color: #3b8dbd;
+		border-radius: 10px;
+		padding: 15px;
+		margin: 0px;
+	}
+	.titulo {
+		border-bottom: 1px solid black;
+		font-size: 14pt;
+		border-radius: 10px;
+	}
+	.descricao {
+		text-align: center;
+	}
+	.titulo_principal {
+		font-size: 35pt;
+		color: #eaeaea;
+	}
+	.tit_sub {
+		font-weight: bold;
+		color: #eaeaea;
+	}
+	#header {
+		background-color: #1C1C1C;
+		margin: 0;
+		padding: 15px;
+
+	}
+	#b_voltar {
+		width: 500px;
+		border-radius: 0px 0px 40px 40px;
+		margin-bottom: 15px;
+		box-shadow:  0px 4px 20px;
+		color:	#808080;
+	}
+	.b_mostrar {
+		text-decoration: none;
+		background-color: #30b570;
+		color: #FFF;
+		padding: 5px;
+		border-radius: 10px;
+		position: relative;
+
+	}
+
+
+
+</style>
+<!-- Script JQuery Toggle -->
+<script type='text/javascript'>
+	$(document).ready(function(){
+		$(".mostrar").hide();
+		$(".ocultar").click(function(){
+			$(this).next(".mostrar ").slideToggle(600);
+		});
+	});
+</script>
+<!-- Fim Script JQuery Toggle -->
+<body>
+<center>
+<div id="header">
+	<div class="titulo_principal">Painel de Processos de Gestão da CPQ</div>
+	<div class="tit_sub">Universidade da integração internacional da lusofonia Afro-brasileira(UNILAB)</div>
+</div>
+<a href="http://proppg.unilab.edu.br/"><img src="botao2.png" id="b_voltar"></a>
+</center>
+<center>
+<div class="conteudo">	
+	<div class="container">
+		<!-- Iniciação científica -->
+		<div class="box">
+			<div class='ocultar'>
+				<center>
+					<div class="img_tit">
+						<center>
+							<p><img src="ic.png" width="100px"></p>
+							<p class="titulo">Iniciação Científica</p>
+						</center>
+					</div>
+				</center>
+			</div>
+			<div class='mostrar'>
+				<div class='ocultar'>
+					<p class="sub_tit">CLIC - Submissão/edital</p>
+				</div>
+				<div class='mostrar'>
+					<p class="descricao">Este processo visa à submissão de edital na CLIC ( Comissão Local de Iniciação cientifica) para a sua análise e aprovação.</p>
+					<p><a class="b_mostrar" href="./IC/CLIC/Aprovacao_de_edital_da_CLIC.pdf" target="_blank">Baixar processo<span ></span></a></p>
+				</div>
+				<div class='ocultar'>
+					<p class="sub_tit">CLIC - Publicação/edital/projeto IC</p>
+				</div>
+				<div class='mostrar'>
+					<p class="descricao">Este processo visa  a publicação de edital de projeto de Iniciação Ciêntifica.</p>
+					<p><a class="b_mostrar" href="./IC/CLIC/Publicacao_de_edital_de_IC.pdf" target="_blank">Baixar processo</a></p>
+				</div>
+				<div class='ocultar'>
+					<p class="sub_tit">CLIC - Submissão/Relatório/IC</p>
+				</div>
+				<div class='mostrar'>
+					<p class="descricao">Este processo visa a submissão de relatório parcial e final de IC  para avaliação e aprovação.</p>
+					<p><a class="b_mostrar" href="./IC/CLIC/Avaliacao_de_relatorio_parcial_e_final_de_IC.pdf" target="_blank">Baixar processo</a></p>
+				</div>
+				<div class='ocultar'>
+					<p class="sub_tit">CAPP - Cancelamento de projeto</p>
+				</div>
+				<div class='mostrar'>
+					<p class="descricao">Este processo visa efetivação do cancelamento de projeto de Iniciação Ciêntifica.</p>
+					<p><a class="b_mostrar" href="./IC/CAPP/Cancelamento_de_Projeto_de_IC.pdf" target="_blank">Baixar processo</a></p>
+				</div>
+				<div class='ocultar'>
+					<p class="sub_tit">ALUNOS - Cancelamento de bolsa de pesquisa (IC)</p>
+				</div>
+				<div class='mostrar'>
+					<p class="descricao">Este processo visa a efeivação do cancelamento de bolsa de pesquisa de Iniciação Ciêntifica.</p>
+					<p><a class="b_mostrar" href="./IC/ALUNOS/SOLICITACAO_DE_CANCELAMENTO_DE_BOLSA.pdf" target="_blank">Baixar processo</a></p>
+				</div>
+				<div class='ocultar'>
+					<p class="sub_tit">ALUNOS - Substituição de bolsista (IC)</p>
+				</div>
+				<div class='mostrar'>
+					<p class="descricao">Este processo visa a efetivação da substituição de bolsista de Iniciação Ciêntifica.</p>
+					<p><a class="b_mostrar" href="./IC/ALUNOS/Solicitacao_de_substituicao_de_bolsista_de_IC.pdf" target="_blank">Baixar processo</a></p>
+				</div>
+				<div class='ocultar'>
+					<p class="sub_tit">ALUNOS - Autorização da substituição de voluntário (IC)</p>
+				</div>
+				<div class='mostrar'>
+					<p class="descricao">Este processo visa a autorização da substituição de voluntário de Iniciação Ciêntifica.</p>
+					<p><a class="b_mostrar" href="./IC/ALUNOS/Solicitacao_de_substituicao_de_Voluntariode_IC.pdf" target="_blank">Baixar processo</a></p>
+				</div>
+				<div class='ocultar'>
+					<p class="sub_tit">ALUNOS - Cadastro/Voluntário</p>
+				</div>
+				<div class='mostrar'>
+					<p class="descricao">Este processo visa a autorização da substituição de voluntário de Iniciação Ciêntifica.</p>
+					<p><a class="b_mostrar" href="./IC/ALUNOS/Solicitação_de_cadastro_de_Voluntario_de_IC.pdf" target="_blank">Baixar processo</a></p>
+				</div>
+				
+			</div>
+		</div>
+		<!-- FIM -->
+	</div>
+	<div class="container">
+	<!--Certificacoes-->
+		<div class="box2">
+			<div class='ocultar'>
+					<center>
+					<div class="img_tit">
+						<center>
+							<p><img src="certifica.png" width="100px"></p>
+							<p class="titulo">Certificações</p>
+						</center>
+					</div>
+				</center>
+				</div>
+				<div class='mostrar'>
+					<div class='ocultar'>
+						<p class="sub_tit">DECLARAÇÕES/RELATORIOS/CERTIFICADOS - (SEI)</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa à obtenção de declaração da autorização de acesso externo ao SEI ( Sistema Eletrônico de informações).</p>
+						<p><a class="b_mostrar" href="./Certificacoes/DECLARACOES-RELATORIOS-CERTIFICADOS/Solicitacao_de_declaracao_para_usuario_externo.pdf" target="_blank">Baixar processo</a></p>
+					</div>
+					<div class='ocultar'>
+						<p class="sub_tit">DECLARAÇÕES/RELATORIOS/CERTIFICADOS - (Projeto de pesquisa)</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa à obtenção de declaração  de participação em projeto de pesquisa.</p>
+						<p><a class="b_mostrar" href="./Certificacoes/DECLARACOES-RELATORIOS-CERTIFICADOS/Solicitacao_de_declaracao_de_participacao_em_projeto.pdf" target="_blank">Baixar processo</a></p>
+					</div>
+					<div class='ocultar'>
+						<p class="sub_tit">DECLARAÇÕES/RELATORIOS/CERTIFICADOS - (Pesquisador/edital externo)</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa a obtenção de declaração para pesquisador da Unilab participar de edital externo.</p>
+						<p><a class="b_mostrar" href="./Certificacoes/DECLARACOES-RELATORIOS-CERTIFICADOS/Solicitacao_de_declaracao_de_pesquisador_da_Unilab_PPEEICPOS.pdf" target="_blank">Baixar processo</a></p>
+					</div>
+					<div class='ocultar'>
+						<p class="sub_tit">DECLARAÇÕES/RELATORIOS/CERTIFICADOS - (Carga horária, docentes)</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa a obtenção de relatório de carga horária de docentes da Unilab.</p>
+						<p><a class="b_mostrar" href="./Certificacoes/DECLARACOES-RELATORIOS-CERTIFICADOS/solicitacao_de_carga_horaria_de_docentes.pdf" target="_blank">Baixar processo</a></p>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="container">
+	<!-- Fluxo contínuo -->
+		<div class="box">
+			<div class='ocultar'>
+					<center>
+					<div class="img_tit">
+						<center>
+							<p><img src="fc.png" width="100px"></p>
+							<p class="titulo">Fluxo contínuo</p>
+						</center>
+					</div>
+				</center>
+				</div>
+				<div class='mostrar'>
+					<div class='ocultar'>
+						<p class="sub_tit">CAPP - cadastro/projeto/fluxo contínuo</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa a realização do cadastro de projeto de pesquisa em fluxo contínuo.</p>
+						<p><a class="b_mostrar" href="./FC/CAPP/SOLICITACAO_DE_CADASTRAMENTO_DE_PROJETO_EM_FLUXO_CONTINUO.pdf" target="_blank">Baixar processo</a></p>
+					</div>
+					<div class='ocultar'>
+						<p class="sub_tit">CAPP - Alteração/projeto/fluxo contínuo</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa a alteração de projeto de pesquisa em fluxo contínuo.</p>
+						<p><a class="b_mostrar" href="./FC/CAPP/Solicitacao_de_Altercao_de_Projeto_em_Fluxo_continuo.pdf" target="_blank">Baixar processo</a></p>
+					</div>
+					<div class='ocultar'>
+						<p class="sub_tit">CAPP - Autorização/alteração/projeto de pesquisa</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa a obtenção de autorização de alteração da metodologia de projeto de pesquisa.</p>
+						<p><a class="b_mostrar" href="./FC/CAPP/SOLICITACAO_DE_ALTERACAO_DE_METODOLOGIA_DO_PROJETO_DE_PESQUISA.pdf" target="_blank">Baixar processo</a></p>
+					</div>
+					<div class='ocultar'>
+						<p class="sub_tit">CAPP - Cancelamento/projeto de pesquisa/fluxo contínuo</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa a efetivação do cancelamento de projeto de pesquisa cadastrado em fluxo contínuo.</p>
+						<p><a class="b_mostrar" href="./FC/CAPP/Cancelameto_de_projeto_cadastrado_em_Fluxo_Continuo.pdf" target="_blank">Baixar processo</a></p>
+					</div>
+					<div class='ocultar'>
+						<p class="sub_tit">CAPP - Interrupção/projeto de pesquisa/fluxo contínuo</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa  a autorização de Interupção de projeto cadastrado em Fluxo contínuo.</p>
+						<p><a class="b_mostrar" href="./FC/CAPP/Solicitacao_de_interrupção_de_projeto_cadastrado_em_Fluxo_Continuo.pdf" target="_blank">Baixar processo</a></p>
+					</div>
+					<div class='ocultar'>
+						<p class="sub_tit">CAPP - submissão/relatório/fluxo contínuo</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa a submissão de relatório parcial e final de Fluxo contínuo  para avaliação e aprovação.</p>
+						<p><a class="b_mostrar" href="./FC/CAPP/Avaliação_de_Relatorio_parcial_e_final_de_Fluxo_Continuo.pdf" target="_blank">Baixar processo</a></p> 
+					</div>
+					<div class='ocultar'>
+						<p class="sub_tit">ALUNOS - Autorizção/substituição/bolsista</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa a autorização da substituição de bolsista de fluxo contínuo.</p>
+						<p><a class="b_mostrar" href="./FC/ALUNOS/Solicitacao_de_Substituicao_de_Voluntario_de_Fluxo_Continuo.pdf" target="_blank">Baixar processo</a></p>
+					</div>
+					<div class='ocultar'>
+						<p class="sub_tit">ALUNOS - Cadastro/voluntário/fluxo contínuo</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa a realização de cadastro de voluntário de Fluxo Contínuo.</p>
+						<p><a class="b_mostrar" href="./FC/ALUNOS/Solicitacao_de_cadastro_de_Voluntario_de_Fluxo_Continuo.pdf" target="_blank">Baixar processo</a></p>
+					</div>
+				</div>
+		</div>
+	<!-- FIM -->
+	</div>
+	<div class="container">
+	<!-- Sistemas externos -->
+		<div class="box">
+			<div class='ocultar'>
+					<center>
+					<div class="img_tit">
+						<center>
+							<p><img src="se.png" width="100px"></p>
+							<p class="titulo">Sistemas externos</p>
+						</center>
+					</div>
+				</center>
+				</div>
+				<div class='mostrar'>
+					<div class='ocultar'>
+						<p class="sub_tit">SISGEN</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa a Inclusão ou Alteração de participante em projeto de pesquisa no SISGEN (Sistema Nacional de Gestão do Patrimônio Genético).</p>
+						<p><a class="b_mostrar" href="./SE/SISGEN/Inclusao_Alteracao_de_Participacao_Pesquisa_no_SISGEN.pdf" target="_blank">Baixar processo</a></p>
+					</div>
+				</div>
+		</div>
+	<!-- FIM -->
+	</div>
+	<div class="container">
+	<!-- Grupos de Pesquisa -->
+		<div class="box">
+			<div class='ocultar'>
+					<center>
+					<div class="img_tit">
+						<center>
+							<p><img src="grupos.png" width="100px"></p>
+							<p class="titulo">Grupos de pesquisa</p>
+						</center>
+					</div>
+				</center>
+				</div>
+				<div class='mostrar'>
+					<div class='ocultar'>
+						<p class="sub_tit">CADASTRO DE GRUPOS DE PESQUISA</p>
+					</div>
+					<div class='mostrar'>
+						<p class="descricao">Este processo visa realização do cadastro de grupo de pesquisa e a sua certificação.</p>
+						<p><a class="b_mostrar" href="./GP/CADASTRO_DE_GRUPOS_DE_PESQUISA/Cadrastamento_de_Grupo_de_Pesquisa_Ok.pdf" target="_blank">Baixar processo</a></p>
+					</div>
+				</div>
+		</div>
+	<!-- FIM -->
+	</div>
+	
+</div>
+</body>
+</html>
